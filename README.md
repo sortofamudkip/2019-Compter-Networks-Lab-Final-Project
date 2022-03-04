@@ -12,9 +12,11 @@ I wrote the following parts:
 * `attacks/`: two types of DDOS attacks. Mostly done using Scapy.
     * `dns_atk.py`: **DNS attack** (in Python).
     * `smurf.py`: **Smurf attack** (in Python). `smurf.c` is the C version.
+ 
 *  `ryu/`: the controller, which specifies the detection method. 
-        *  `baseline.py`, for the **baseline detection method**. A combination of the other `s*.py` files inside. `traffic.txt` contains a sample output of the network activity.
-        *  `conrate.py`, for the **connection rate detection method**.
+    *  `baseline.py`, for the **baseline detection method**. A combination of the other `s*.py` files inside. `traffic.txt` contains a sample output of the network activity.
+    *  `conrate.py`, for the **connection rate detection method**.
+
 *  `mnet/` and `scripts/`: inside are some simple topologies and simple scripts to start the mininet. These are unused, as the project uses the 64-host tree network in the CLI as shown above.
 
 The `presentation/` directory contains the files used during the presentation.
